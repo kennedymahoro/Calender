@@ -1,4 +1,8 @@
-const CalenderGrid = (props: { Parent: string; Child: string }) => {
+const CalenderGrid = (props: {
+  Parent: string
+  Child: string
+  Days: string
+}) => {
   const Divs = []
   for (let i = 0; i < 31; i++) {
     Divs.push(
@@ -16,7 +20,11 @@ const CalenderGrid = (props: { Parent: string; Child: string }) => {
     'Saturday',
     'Sunday'
   ]
-  const Name_Of_Days_Div = Name_Of_Days.map((a, i) => <div key={i}>{a}</div>)
+  const Name_Of_Days_Div = Name_Of_Days.map((a, i) => (
+    <div key={i} className={props.Days}>
+      {a}
+    </div>
+  ))
   return (
     <div className={props.Parent}>
       {Name_Of_Days_Div}
