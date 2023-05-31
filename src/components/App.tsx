@@ -1,11 +1,11 @@
 import CalenderGrid from './CalenderGrid.tsx'
 function App() {
   return (
-    <div className="w-screen h-screen">
+    <div>
       <CalenderGrid
-        Parent="grid grid-cols-7"
-        Child="border-2 h-36 hover:bg-sky-200"
-        Days="border-2"
+        Parent="grid grid-cols-7 w-screen h-screen p-2"
+        Child="border-2 h-auto hover:bg-sky-200"
+        Days="border-2 h-10"
       />
     </div>
   )
