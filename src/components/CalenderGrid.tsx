@@ -6,9 +6,9 @@ const CalenderGrid = (props: {
   const Divs = []
   for (let i = 0; i < 31; i++) {
     Divs.push(
-      <div key={i} className={props.Child}>
+      <button key={i} className={props.Child}>
         {i + 1}
-      </div>
+      </button>
     )
   }
   const Name_Of_Days = [
