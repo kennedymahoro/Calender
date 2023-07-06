@@ -1,4 +1,4 @@
-import CalenderGrid from './CalenderGrid.tsx'
+import CalenderGrid from './CalenderGrid'
 function App() {
   return (
     <div>
