@@ -2,12 +2,13 @@ const CalenderGrid = (props: {
   Parent: string
   Child: string
   Days: string
+  Number: string
 }) => {
   const Divs = []
   for (let i = 0; i < 31; i++) {
     Divs.push(
       <button key={i} className={props.Child}>
-        {i + 1}
+        <div className={props.Number}> {i + 1} </div>
       </button>
     )
   }
